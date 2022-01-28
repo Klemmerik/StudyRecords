@@ -13,6 +13,6 @@ audio_source=$(echo ${audio_source} | cut -c 2- | rev | cut -c 2- | rev)
 current_date=$(date +%d.%m.%Y)
 
 
-ffmpeg -s ${screen_size} -framerate 25 -f x11grab -i :0.0 -f pulse -i ${audio_source} video.mp4 &>/dev/null
+ffmpeg -s ${screen_size} -framerate 25 -f x11grab -i :0.0 -f pulse -i ${audio_source} video.mp4
 
 
